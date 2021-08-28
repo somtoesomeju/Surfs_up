@@ -10,7 +10,7 @@ In this analysis, I am creating a database that analyses the temperature in a gi
 # Results
 From the query, the temperatures are relatively the same during the winter and summer months. June had an average temp of 74 degrees Farenheit while December had an average temperature. This is great considering that during the winter months, Oahu would have hot weather thats a good escape from the colder cities. This also helps businesses run all year round. Temperature alone, does not solve the problem though. Since Hawaii gets a lot of rain, its best to check the average precipitation for the same time period. 
 
-If we were to run a query for the average precipitaion it would be as followa:
+If we were to run a query for the average precipitaion it would be as follows:
 
 rain_dec = session.query(Measurement.date, Measurement.prcp).filter(extract('month',Measurement.date)==12).all()
 
