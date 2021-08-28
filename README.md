@@ -12,7 +12,7 @@ From the query, the temperatures are relatively the same during the winter and s
 
 If we were to run a query for the average precipitaion it would be as follows:
 
-rain_dec = session.query(Measurement.date, Measurement.prcp).filter(extract('month',Measurement.date)==12).all()
-rain_june = session.query(Measurement.date, Measurement.prcp).filter(extract('month',Measurement.date)==6).all()
+- rain_dec = session.query(Measurement.date, Measurement.prcp).filter(extract('month',Measurement.date)==12).all()
+- rain_june = session.query(Measurement.date, Measurement.prcp).filter(extract('month',Measurement.date)==6).all()
 
 In the end, getting the average precepitation would give us a better idea of the conditions in Oahu. From the analysis, I  was able to create a dataframe showing the average preciepitation for [June](https://github.com/somtoesomeju/Surfs_up/blob/main/june_rain.png) and [December](https://github.com/somtoesomeju/Surfs_up/blob/main/dec_rain.png). From the screenshots, June has a higher precipitation, indicating that it rains more during the summer months. December might be the best month overall in terms of temperature and precipitation.
